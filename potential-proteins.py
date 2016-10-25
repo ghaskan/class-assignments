@@ -40,8 +40,7 @@ def translate_dna(seq):
     """
     aa = ''
     seq = seq.upper()
-
-for i in range(0, len(seq) - 2, 3):
+    for i in range(0, len(seq) - 2, 3):
         codon = seq[i:i + 3]
         aa += codon_table[codon]
     return aa
